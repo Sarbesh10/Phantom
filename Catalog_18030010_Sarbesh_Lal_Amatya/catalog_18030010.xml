@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="catalog_18030010.css"?> <!--To call external CSS file--> 
+<vehicleshop xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" 
+         xs:noNamespaceSchemaLocation= "catalog_18030010.xsd"> <!--Vehicleshop is the root element and the command is used to call external XSD file-->
+    <details id="head"> <!--Defining ID-->
+        <Company>PHANTOM</Company>
+        <Logo></Logo> <!--To input Logo Image-->
+    </details>    
+    <vehicle>
+        <sports>
+            <Name>Lotus Evora</Name>
+            <Brand>Lotus</Brand>
+            <Price>$96,956</Price>
+            <Description>The Lotus Evora is a sports car produced by British car manufacturer Lotus. The car, which was developed under the project name Project Eagle, was launched as the Evora on 22 July 2008 at the British International Motor Show. The Evora S was launched in 2010 with a supercharged 3.5-litre V6.</Description>
+            <Specifications>
+                <Engine>Engine Type and Required Fuel                       3.5 L Toyota 2GR-FE V6 3.5 L Toyota 2GR-FE Supercharged V6/Ethanol Fuel Mixture E10</Engine>
+                <Displacement>Displacement (liters/cubic inches)            3.5 liters / 214</Displacement>
+                <Fuel>Fuel System                                           Gasoline Direct Injection</Fuel>
+                <Horsepower>Maximum Horsepower @ RPM                        400 @ 7000</Horsepower>
+                <Torque>Maximum Torque @ RPM                                350 @ 6200</Torque>
+            </Specifications>
+            <image id="evora">
+            </image>
+        </sports>
+
+        <sports>
+            <Name>BMW i8</Name>
+            <Brand>BMW</Brand>
+            <Price>$160,000-$175,000</Price>
+            <Description>The BMW i8 is a plug-in hybrid sports car developed by BMW. The i8 is part of BMW's electric fleet "Project i" being marketed as a new sub-brand, BMW i. The 2015 model year BMW i8 has a 7.1 kWh lithium-ion battery pack that delivers an all-electric range of 37 km (23 mi) under the New European Driving Cycle.</Description>
+            <Specifications>
+                <Engine>Engine Type and Required Fuel                       Intercooled Turbo Gas/Electric I-3</Engine>
+                <Displacement>Displacement (liters/cubic inches)            1.5 L/91</Displacement>
+                <Fuel>Fuel System                                           Gasoline Direct Injection / Hybrid Electric</Fuel>
+                <Horsepower>Maximum Horsepower @ RPM                        288 @ 5800</Horsepower>
+                <Torque>Maximum Torque @ RPM                                320 @ 3700</Torque>
+            </Specifications>
+            <image id="i8">
+            </image>
+        </sports>
+
+        <sports>
+            <Name>Lexus LC</Name>
+            <Brand>Lexus</Brand>
+            <Price>$97,460</Price>
+            <Description>The Lexus LC (Japanese: レクサス・LC, Rekusasu LC) is a grand tourer manufactured by Lexus, Toyota's luxury division. ... It is the first Lexus model to utilize the GA-L platform, which, along with other components, is shared with the full-size LS 500 sedan. According to Lexus, the name "LC" stands for "Luxury Coupe".</Description>
+            <Specifications>
+               <Engine>Engine Type and Required Fuel                        5.0 L 2UR-GSE V8 (petrol, LC 500) and 3.5 L 8GR-FXS V6 (petrol hybrid, LC 500h)</Engine>
+                <Displacement>Displacement (liters/cubic inches)            3.5/90.6</Displacement>
+                <Fuel>Fuel System                                           Petrol / Hybrid Petrol</Fuel>
+                <Horsepower>Maximum Horsepower @ RPM                        295.0 @ 6600</Horsepower>
+                <Torque>Maximum Torque @ RPM                                350 @ 5100</Torque>
+            </Specifications>
+            <image id="LC">
+            </image>
+        </sports>
+        
+        <off-road>
+            <Name>Land Rover Defender</Name>
+            <Brand>Land Rover</Brand>
+            <Price>$50,925</Price>
+            <Description>The Land Rover Defender (initially called the Land Rover Ninety and Land Rover One Ten) is a British four-wheel drive off-road vehicle developed in the 1980s from the original Land Rover series which was launched at the Amsterdam Motor Show in April 1948.</Description>
+            <Specifications>
+                <Engine>Engine Type and Required Fuel                       V8 Petrol Engine</Engine>
+                <Displacement>Displacement (liters/cubic inches)            1997 cc</Displacement>
+                <Fuel>Fuel System                                           Premium Gasoline</Fuel>
+                <Horsepower>Maximum Horsepower @ RPM                        296.3 @ 5500</Horsepower>
+                <Torque>Maximum Torque @ RPM                                400 @ 1500-4000</Torque>
+            </Specifications>
+            <image id="Defender">
+            </image>
+        </off-road>
+
+        <off-road>
+            <Name>Chevrolet Colorado ZR2-2019</Name>
+            <Brand>Chevrolet</Brand>
+            <Price>$48,045</Price>
+            <Description>Colorado ZR2 is the off-road truck designed to take on terrain that would stop other trucks dead in their tracks. Powered by an available Duramax® 2.8L Turbo-Diesel engine and engineered with segment exclusive components like Multimatic™ shocks, when you're behind the wheel of ZR2, all roads lead to adventure.</Description>
+            <Specifications>
+                <Engine>Engine Type and Required Fuel                       3.6L DOHC V-6 with Direct Injection</Engine>
+                <Displacement>Displacement (liters/cubic inches)            2.8/186</Displacement>
+                <Fuel>Fuel System                                           Petrol / Hybrid Petrol</Fuel>
+                <Horsepower>Maximum Horsepower @ RPM                        308 @ 6800</Horsepower>
+                <Torque>Maximum Torque @ RPM                                275 @ 40000</Torque>
+            </Specifications>
+            <image id="ColoradoZR2-2019">
+            </image>
+        </off-road>
+
+        <off-road>
+            <Name>Land Rover Range Rover</Name>
+            <Brand>Land Rover</Brand>
+            <Price>$90,900</Price>
+            <Description>The Land Rover Range Rover (generally known simply as a Range Rover) is a full-sized luxury sport utility vehicle (SUV) from Land Rover, a marque of Jaguar Land Rover.</Description>
+            <Specifications>
+                <Engine>Engine Type and Required Fuel                       V-Type Petrol Engine</Engine>
+                <Displacement>Displacement (liters/cubic inches)            4999 cc</Displacement>
+                <Fuel>Fuel System                                           Premium Gasoline</Fuel>
+                <Horsepower>Maximum Horsepower @ RPM                        557.86 @ 6000-6500</Horsepower>
+                <Torque>Maximum Torque @ RPM                                700 @ 3500-5000</Torque>
+            </Specifications>
+            <image id="RangeRover">
+            </image>
+        </off-road>
+    </vehicle>
+    <bottom>
+        <ContactNumber>9808210750</ContactNumber>
+        <Email>sarshlov@gmail.com</Email>
+        <Location>Sanepa, Lalitpur</Location>
+        <image id="about">
+        </image>
+    </bottom>
+</vehicleshop>

@@ -1,0 +1,136 @@
+vehicleshop{
+    background: url(Background.jpg); /*Uploads Image*/
+    color: black;
+    background-size: cover;
+    font-family: "Impact", Charcoal, sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+vehicle{
+    width: auto;
+    margin: 2%;
+
+}
+sports,off-road{
+    border: 2px solid black;
+    display: block;
+    padding: 10px;
+}
+Engine,Displacement,Fuel,Horsepower,Torque{
+    text-indent: 50px;
+    padding: 1px;
+    display: block;
+    display: list-item;
+    list-style-type: square; /* square design for list*/
+    margin: 1%;
+    margin-left: 5%;
+}
+Brand,Price,Description{
+    width: 880px;
+    padding: 3px;
+    display: block;
+}
+Price:hover {
+    color: #d1d3d4;
+    cursor:pointer;
+    background: #dc143c;
+    box-shadow: 0 0 10px #2196f3,  0 0 40px #2196f3, 0 0 80px #2196f3; /*To change color with effect while hovering*/
+    transition-delay: 0s;
+    width: 130px;
+}
+Name{
+    width: 880px;
+    padding: 3px;
+    display: block;
+    color: rgb(252, 3, 102);
+    font-size: 25px;
+    font-style: italic;
+}
+/*CSS for respective ID alleviation*/
+#evora{
+    content: url("Evora.png");
+    height: 300px;
+    width: 450px;
+    float: right;
+    margin-top: -250px;
+}
+#i8{
+    content: url("i8.png");
+    height: 250px;
+    width: 480px;
+    float: right;
+    margin-top: -230px;
+}
+#LC{
+    content: url("LC.png");
+    height: 650px;
+    width: 580px;
+    float: right;
+    margin-top: -470px;
+}
+#Defender{
+    content: url("Defender.png");
+    height: 300px;
+    width: 450px;
+    float: right;
+    margin-top: -295px;
+}
+#ColoradoZR2-2019{
+    content: url("ColoradoZR2-2019.png");
+    height: 350px;
+    width: 450px;
+    float: right;
+    margin-top: -320px;
+}
+#RangeRover{
+    content: url("RangeRover.png");
+    height: 350px;
+    width: 430px;
+    float: right;
+    margin-top: -290px;
+}
+#head{
+    padding-top: 100px;
+    padding-left: 1%;
+    padding-bottom: 20px;
+    padding-right: 2%;
+    font-family: serif;
+    font-style: italic;
+    font-size: 80px;
+    font-weight: bold;
+    color: rgb(201, 190, 91);
+    display:block; /*To show line steps as a block*/
+    background: black;
+}
+Logo{
+    content: url("Logo.png");
+    float: right;
+    margin-top: -85px;
+}
+bottom{
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+    color: rgb(201, 190, 91);
+    padding: 2%;
+    background: black;
+    float:left;
+    width: 1440px;
+}
+
+ContactNumber,Email,Location{
+    text-align: left;
+    display: block;
+    font-size: 25px;
+    padding-top: 20px;
+    margin-left: 1180px;
+}
+Location:hover,Email:hover{
+    color: red; /*Changes color of text while hovering*/
+    cursor: pointer; /*Changes cursor into pointer type while hovering*/
+}
+#about{
+    float:left;
+    margin-top: -140px;
+    padding-left:10px;
+    content: url("Logo.png"); /*Uploading Image*/
+}

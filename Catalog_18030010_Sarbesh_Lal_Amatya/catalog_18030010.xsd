@@ -1,0 +1,96 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"> <!--To start schema-->
+  <xs:element name="Company" type="xs:string"/> <!--type defines the datatype of the name value-->
+  <xs:element name="Logo" type="xs:string"/> <!--String Type element contains the characters-->
+  <xs:element name="Engine" type="xs:string"/>
+  <xs:element name="Displacement" type="xs:string"/>
+  <xs:element name="Fuel" type="xs:string"/>
+  <xs:element name="Horsepower" type="xs:string"/>
+  <xs:element name="Torque" type="xs:string"/>
+  <xs:element name="Name" type="xs:string"/>
+  <xs:element name="Brand" type="xs:string"/>
+  <xs:element name="Price" type="xs:string"/>
+  <xs:element name="Description" type="xs:string"/>
+  <xs:element name="Specifications">
+    <xs:complexType> <!--Complex Type element contains other elements and attributes-->
+      <xs:sequence>  <!--Child Elements must appear in sequence-->
+        <xs:element ref="Engine"/>
+        <xs:element ref="Displacement"/>
+        <xs:element ref="Fuel"/>
+        <xs:element ref="Horsepower"/>
+        <xs:element ref="Torque"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="image">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="jbc:restr-contact-no-length">
+          <xs:attribute type="xs:string" name="id" use="optional"/> <!--Because use property is not mandatory-->
+        </xs:extension>
+      </xs:simpleContent> <!--SimpleContent contains extensions or restrictions and contains no elements-->
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sports">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Name"/>
+        <xs:element ref="Brand"/>
+        <xs:element ref="Price"/>
+        <xs:element ref="Description"/>
+        <xs:element ref="Specifications"/>
+        <xs:element ref="image"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="off-road">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Name"/>
+        <xs:element ref="Brand"/>
+        <xs:element ref="Price"/>
+        <xs:element ref="Description"/>
+        <xs:element ref="Specifications"/>
+        <xs:element ref="image"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ContactNumber" type="xs:long"/>
+  <xs:element name="Email" type="xs:string"/>
+  <xs:element name="Location" type="xs:string"/>
+  <xs:element name="details">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Company" maxOccurs="unbounded" minOccurs="0"/> <!--making optional element-->
+        <xs:element ref="Logo" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="id"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="vehicle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="sports" maxOccurs="unbounded" minOccurs="0"/>
+        <xs:element ref="off-road" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="bottom">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ContactNumber" maxOccurs="unbounded" minOccurs="0"/>
+        <xs:element ref="Email" maxOccurs="unbounded" minOccurs="0"/>
+        <xs:element ref="Location" maxOccurs="unbounded" minOccurs="0"/>
+        <xs:element ref="image" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="vehicleshop">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="details" maxOccurs="unbounded" minOccurs="0"/>
+        <xs:element ref="vehicle" maxOccurs="unbounded" minOccurs="0"/>
+        <xs:element ref="bottom" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
